@@ -3,7 +3,6 @@
 #include "smemory.h"
 #include "smmap.h"
 #include "sutils.h"
-#include "utils.h"
 #include "easy_verfy.h"
 #include "verify.h"
 #include <iomanip>
