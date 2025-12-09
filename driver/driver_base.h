@@ -35,10 +35,16 @@ public:
         return this->write(address, &value, sizeof(T));
     }
     
-    // 获取模块基址（可选实现）
+     // 获取模块基址（可选实现）
     virtual uintptr_t get_module_base(const char* name) {
         return 0;
     }
+
+    // 获取模块基址
+    virtual pid_t get_pid(const char *name) {
+        return -1;
+    }
+    
     
 protected:
     pid_t target_pid = 0;
