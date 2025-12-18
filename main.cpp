@@ -168,6 +168,8 @@ int main(int argc, char *argv[]) {
         } break;
         case 7: {
             std::cout << "-- 测试单码卡密绑定" << std::endl;
+            //  std::string card_key = custom_sutils::get_input_string("卡密这输入:");
+            //  sverify::bind_card(card_key, sutils::get_imei(3), json4);  这样可以调用终端输入卡密 而不是固定死
             sverify::verify_json json4 = {};// 清空结构体数据
             // NOLINTNEXTLINE
             sverify::bind_card("M8HG452KL7163NZ09XCVBJ", sutils::get_imei(3), json4);
