@@ -76,8 +76,8 @@ on:
           - prw64
 
 env:
-  NDK_VERSION: r27
-  NDK_INSTALL_DIR: ${{ github.workspace }}/android-ndk-r27
+  NDK_VERSION: r29
+  NDK_INSTALL_DIR: ${{ github.workspace }}/android-ndk-r29
 
 jobs:
   build:
